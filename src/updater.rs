@@ -76,10 +76,13 @@ fn has_no_controlling_conns() -> bool {
 }
 
 fn start_auto_update_check() -> Sender<UpdateMsg> {
-    let (tx, rx) = channel();
-    std::thread::spawn(move || start_auto_update_check_(rx));
+    // Auto-update disabled in this fork: do NOT spawn the background update-check
+    // thread, so the client never downloads/installs a new version by itself.
+    let (tx, _rx) = channel();
     return tx;
 }
+
+#[allow(dead_code)]
 
 fn start_auto_update_check_(rx_msg: Receiver<UpdateMsg>) {
     std::thread::sleep(Duration::from_secs(30));
