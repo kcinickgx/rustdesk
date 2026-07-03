@@ -8,6 +8,16 @@
   <b>We need your help to translate this README, <a href="https://github.com/rustdesk/rustdesk/tree/master/src/lang">RustDesk UI</a> and <a href="https://github.com/rustdesk/doc.rustdesk.com">RustDesk Doc</a> to your native language</b>
 </p>
 
+> [!NOTE]
+> **Community fork — restores the "Hide connection management window" option.**
+> This fork is identical to upstream RustDesk, with the single addition of re-enabling the option to
+> hide the connection-management (incoming session) window on the controlled side.
+>
+> To be clear, this is **not** a Pro-only feature. RustDesk removed this option from **all** versions
+> (reportedly over antivirus false-positive concerns), so even with a Pro license it no longer shows up.
+> It is a frequently requested feature that upstream has said it will not add back, so this fork simply
+> restores it. Nothing else is changed.
+
 > [!Caution]
 > **Misuse Disclaimer:** <br>
 > The developers of RustDesk do not condone or support any unethical or illegal use of this software. Misuse, such as unauthorized access, control or invasion of privacy, is strictly against our guidelines. The authors are not responsible for any misuse of the application.
