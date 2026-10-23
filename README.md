@@ -9,14 +9,17 @@
 </p>
 
 > [!NOTE]
-> **Community fork — restores the "Hide connection management window" option.**
-> This fork is identical to upstream RustDesk, with the single addition of re-enabling the option to
-> hide the connection-management (incoming session) window on the controlled side.
+> **Community fork — restores "Hide connection management window" and removes auto-update.**
+> This fork differs from upstream RustDesk in two ways:
+> 1. It re-enables the option to hide the connection-management (incoming session) window on the
+>    controlled side.
+> 2. It disables the software-update check and auto-update, so the client never updates itself
+>    (no "new version available" prompt, no automatic download/install).
 >
-> To be clear, this is **not** a Pro-only feature. RustDesk removed this option from **all** versions
+> About (1): this is **not** a Pro-only feature. RustDesk removed the option from **all** versions
 > (reportedly over antivirus false-positive concerns), so even with a Pro license it no longer shows up.
 > It is a frequently requested feature that upstream has said it will not add back, so this fork simply
-> restores it. Nothing else is changed.
+> restores it. Everything else is identical to upstream.
 
 > [!Caution]
 > **Misuse Disclaimer:** <br>
